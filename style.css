@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#navbar {
+    height: 50px;
+    text-align: center;
+}
+
+button {
+    background-color: #3498db;
+    height: 35px;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.nav_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0px 15px;
+    text-align: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.active {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.logout {
+    color: rgb(191, 76, 76);
+}
+
+a:hover {
+    color: burlywood;
+    transform: scale(1.1);
+}
+
+.dashboard-link {
+    color: #3498db;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.dashboard-link:hover {
+    color: #2980b9;
+    transform: none;
+}
+
+header {
+    background: #333;
+    color: aliceblue;
+    padding: 15px;
+    font-size: large;
+}
+
+h1 {
+    margin: 15px;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+h3 {
+    color: #34495e;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h4 {
+    margin: 10px 0 5px 0;
+    color: #2c3e50;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Dashboard specific styles */
+.dashboard-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.welcome-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-item, .assignment-item, .grade-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.announcement-date, .due-date {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.view-more {
+    display: block;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+.grade {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 4px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.link-list li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-pic {
+        position: relative;
+        display: block;
+        margin: 10px auto;
+        top: auto;
+        left: auto;
+    }
+    
+    .nav_link {
+        flex-direction: column;
+    }
+    
+    .nav_link li {
+        margin: 5px 0;
+    }
+}
